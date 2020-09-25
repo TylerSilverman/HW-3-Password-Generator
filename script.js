@@ -5,16 +5,20 @@ function generatePassword (){
 
 var generatePassword;
 var length = prompt ("How long is the password?");
-
-
-
-
-
-
-
-
-
 }
+
+if (length < 8){
+  alert("Password must be at least 8 characters.");
+  return generatePassword;
+}
+
+if (length > 128){
+  alert("Password cannot be more then 128 characters.");
+  return generatePassword;
+}
+
+
+
 
 // Write password to the #password input
 function writePassword() {
