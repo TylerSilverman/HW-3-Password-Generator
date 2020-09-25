@@ -2,8 +2,8 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword (){
-
 var generatePassword;
+
 var length = prompt ("How long is the password?");
 
 
@@ -17,22 +17,20 @@ if (length > 128){
   return generatePassword ();
 }
 
-var randomLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
 
-var randomPassword = [randomLetters];
+var randomPassword = [letters];
 
-for (var i=0; i < length; i++){
-  var randomIndex = Math.floor(Math.random() * randomLetters.length);
+for (var i=0; i < length; i++) {
+  var randomIndex = Math.floor(Math.random() * letters.length);
   console.log(randomIndex);
-  randomPassword.push(randomLetters[randomIndex]);
+  randomPassword.push(letters[randomIndex]);
 }
 
-
-
-
-
+generatePassword = randomPassword
+return generatePassword;
 
 }
 
