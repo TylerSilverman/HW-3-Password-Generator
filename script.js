@@ -5,7 +5,7 @@ function generatePassword (){
 
 var generatePassword;
 var length = prompt ("How long is the password?");
-}
+
 
 if (length < 8){
   alert("Password must be at least 8 characters.");
@@ -18,7 +18,7 @@ if (length > 128){
 }
 
 
-
+}
 
 // Write password to the #password input
 function writePassword() {
