@@ -9,13 +9,29 @@ var length = prompt ("How long is the password?");
 
 if (length < 8){
   alert("Password must be at least 8 characters.");
-  return generatePassword;
+  return generatePassword ();
 }
 
 if (length > 128){
   alert("Password cannot be more then 128 characters.");
-  return generatePassword;
+  return generatePassword ();
 }
+
+var randomLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+
+var randomPassword = [randomLetters];
+
+for (var i=0; i < length; i++){
+  var randomIndex = Math.floor(Math.random() * randomLetters.length);
+  console.log(randomIndex);
+  randomPassword.push(randomLetters[randomIndex]);
+}
+
+
+
+
 
 
 }
