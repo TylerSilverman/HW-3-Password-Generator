@@ -15,8 +15,11 @@ if (length > 128) {
   alert("Password cannot be more then 128 characters.");
   return generatePassword ();
 }
-
+// Array -------
 var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// var numbers = [];
+// var symbols - [];
+//____________________________________________________________
 
 
 var randomPassword = [randomPassword];
@@ -26,6 +29,12 @@ for (var i=0; i < length; i++) {
   console.log(randomIndex);
   randomPassword.push(letters [randomIndex]);
 }
+
+// Functions-----
+// consoleInside(letters);
+// consoleInside();
+// consoleInside();
+
 
 generatePassword = randomPassword;
 return generatePassword
