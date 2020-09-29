@@ -5,16 +5,22 @@ function generatePassword () {
 var generatePassword;
 
 var length = prompt ("How long is the password?");
+var characters = confirm("Do you want to include special characters?");
+var upperCase = confirm("Do you want to include upper case letters?");
+var lowerCase = confirm("Do you want to inclue lower case letters?");
+var numbers = confirm("Do you want to include numbers?");
+
 
 if (length < 8) {
-  alert("Password must be at least 8 characters and inclue Upper or Lower case letters, numbers or special characters.");
+  alert("Password must be at least 8 characters.");
   return generatePassword ();
 }
 
 if (length > 128) {
-  alert("Password cannot be more then 128 characters and inclue Upper or Lower case letters, numbers or special characters.");
+  alert("Password cannot be more then 128 characters.");
   return generatePassword ();
 }
+
 // Array to generate password-------
 var characters = ["!", "@", "#", "$", "%", "^", "&", "*", "/", "+"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H"];
