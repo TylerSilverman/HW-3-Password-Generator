@@ -4,11 +4,12 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword () {
 var generatePassword;
 
-var length = prompt ("How long is the password?");
 var characters = confirm("Do you want to include special characters?");
 var upperCase = confirm("Do you want to include upper case letters?");
 var lowerCase = confirm("Do you want to inclue lower case letters?");
 var numbers = confirm("Do you want to include numbers?");
+var length = prompt ("How long is the password?");
+
 
 
 if (length < 8) {
