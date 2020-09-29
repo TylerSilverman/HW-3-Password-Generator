@@ -43,7 +43,7 @@ for (var i=0; i < length; i++) {
 }
 
 generatePassword = randomPassword;
-return generatePassword
+return generatePassword.join('')
 }
 
 // Write password to the #password input
